@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -38,7 +38,9 @@ html{
     margin: 5rem auto;
     font-size: 3.5rem;
     text-align: center;
-    color: var(--th-color);
+}
+.header{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(1, 1, 106));
 }
 .heading div{
     display: inline-block;
@@ -52,7 +54,7 @@ section{
     padding: 3rem 9%;
 }
 header{
-    position: fixed;
+    position: relative;
     top: 0; right: 0; left: 0;
     display: flex;
     align-items: center;
@@ -350,39 +352,73 @@ header .fa-bars{
     height: 15rem;
     padding: 1rem;
 }
-.footer{
-    background: #222;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
-    gap: 2rem;
+.footerr {
+    background-size: 100%;
+    padding: 30px 30px 10px 30px;
+    margin-top: 20px;
+    background-color: rgb(1, 1, 83);
+  }
+  .container2 {
+    margin: auto;
+  }
+  .roww {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+  .footer-col {
+    width: 25%;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
     text-align: center;
-    padding: 4rem;
-}
-.footer h3{
-    font-size: 3.5rem;
-    margin: 2rem 0;
-    color: var(--min-color);
-}
-.footer p{
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    color: var(--min-color);
-}
-.footer i{
-    font-size: 2.6rem;
-    margin: 1rem 0.5rem;
-    color: var(--min-color);
-}
-.footer i:hover,
-.footer a:hover{
-    color: var(--sc-color);
-}
-.footer a{
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
     display: block;
-    font-size: 2rem;
-    margin: 0.5rem;
-    color: var(--min-color);
-}
+    line-height: 30px;
+    transition: all 0.3s ease;
+    background-color: rgb(1, 1, 83);
+  }
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
 
 
 
