@@ -5,7 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="SHEDA.css" />
-    <link rel="stylesheet" href="./plugins/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./plugins/bootstrap.min.css" /> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -69,7 +72,7 @@
           <div class="row justify-content-center">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
               <div class="card border-0 shadow">
-                <img src="img/director.png" alt="..." />
+                <img src="img/director.jpeg" alt="..." />
                 <div class="card-body p-1-9 p-xl-5">
                   <div class="mb-4">
                     <h3 class="h4 mb-0">Awadhi Shedafa</h3>
@@ -105,7 +108,7 @@
     </div>
 
 <!-- EXPERTISE AND PROCESSING-->
-<section class="services">
+<section class="services ">
   <div class="services-wrapper">
     <!-- First service container -->
     <div class="services-container">
@@ -121,17 +124,26 @@
           Sheda GS guarantees that our timber undergoes rigorous inspections and treatments. Our commitment to quality means that every pole not only meets but exceeds industry standards for performance.
         </p>
       </div>
-      <div class="service-image">
-        <div class="image-slider treatment-images">
-          <img src="img/im4.jpg" alt="Treatment" />
-          <img src="img/im5.jpg" alt="Treatment" />
-          <img src="img/im8.jpg" alt="Treatment" />
-          <img src="img/im9.jpg" alt="Treatment" />
-          <img src="img/im10.jpg" alt="Treatment" />
+
+      <div class="service-image swiper">
+      <div class="service-img-wrapper">
+          <div class="service-list swiper-wrapper">
+            <div class="imagey swiper-slide"><img src="img/im4.jpg" alt="Treatment" class="serv-image"/></div>
+            <div class="imagey swiper-slide"><img src="img/im5.jpg" alt="Treatment" /></div>
+            <div class="imagey swiper-slide"><img src="img/im8.jpg" alt="Treatment" /></div>
+            <div class="imagey swiper-slide"><img src="img/im9.jpg" alt="Treatment" /></div>
+            <div class="imagey swiper-slide"><img src="img/im10.jpg" alt="Treatment" /></div>
+            
+          </div>
+  
+          <div class="swiper-pagination"></div>
+        
         </div>
- 
       </div>
+
     </div>
+
+
 
     <!-- Second service container -->
     <div class="services-container">
@@ -167,16 +179,23 @@
           Sheda GS guarantees responsible sourcing of raw materials, ensuring that our poles are produced in an eco-friendly manner, reducing our environmental footprint.
         </p>
       </div>
-      <div class="service-image">
-        <div class="image-slider harvesting-images">
-          <img src="img/im6.jpg" alt="Harvesting" />
-          <img src="img/im11.jpg" alt="Harvesting" />
-          <img src="img/im12.jpg" alt="Harvesting" />
-          <img src="img/im13.jpg" alt="Harvesting" />
+
+      <div class="service-image swiper">
+      <div class="service-img-wrapper">
+          <div class="service-list swiper-wrapper">      
+          <div class="imagey swiper-slide"><img src="img/im6.jpg" alt="Harvesting" /></div>
+          <div class="imagey swiper-slide"><img src="img/im11.jpg" alt="Harvesting" /></div> 
+          <div class="imagey swiper-slide"><img src="img/im12.jpg" alt="Harvesting" /></div>
+          <div class="imagey swiper-slide"><img src="img/im13.jpg" alt="Harvesting" /></div>
         </div>
+
+                  
+        <div class="swiper-pagination"></div>
        
+        </div>
       </div>
-    </div>
+      </div>
+   
 
     <!-- Fourth service container -->
     <div class="services-container">
@@ -201,18 +220,7 @@
 </section>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function startSlider(sliderClass) {
-      const slider = document.querySelector(sliderClass);
-      slider.classList.add('moving');
-    }
 
-    // Initialize the image sliders for Treatment and Harvesting
-    startSlider('.treatment-images');
-    startSlider('.harvesting-images');
-  });
-</script>
 
  
     <!--EXPERTISE AND PROCESSING-->
@@ -269,5 +277,8 @@
     ></script>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    
   </body>
 </html>
