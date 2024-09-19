@@ -87,22 +87,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .preview p {
-  font-size: 18px;
+
+#director-img{
+  width: 16.5rem;
+  border-radius: 10px;
 }
-.preview h2 {
-  margin-bottom: 20px;
-  color: white;
+
+.mb-6{
+height: 20px;
+margin-top: -50px;
+margin-bottom: 50px;
 }
-.andalusia-text::before {
-  content: attr(data-text);
-  position: absolute;
-  color: rgb(73, 113, 213);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid rgb(73, 113, 213);
-  animation: animate 5s linear;
-} */
+
 .team h2 {
   padding-bottom: 30px;
 }
@@ -271,6 +267,13 @@ body {
   .about-pic img {
     width: 400px;
   }
+
+  .mb-6{
+height: 20px;
+margin-top: -21px;
+margin-bottom: 50px;
+}
+  
 }
 
 @media (max-width: 1250px) {
