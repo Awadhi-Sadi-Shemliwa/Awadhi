@@ -58,6 +58,10 @@ body {
   width: 160px;
 }
 
+#navmenu{
+  z-index: 1;
+}
+
 .nav-link {
   font-size: 19px !important;
   color: rgb(223, 228, 240) !important; /* Ensure the color is applied */
