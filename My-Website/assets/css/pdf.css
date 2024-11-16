@@ -1,5 +1,5 @@
-/* Overlay background to cover entire screen */
-#pdfOverlay {
+  /* Overlay background to cover entire screen */
+  #pdfOverlay {
     display: none;
     position: fixed;
     top: 0;
@@ -13,10 +13,10 @@
 /* Popup container for PDF preview */
 #pdfPreviewContainer {
     position: fixed;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 70%;
     height: 80%;
     background: white;
     z-index: 20;
@@ -34,8 +34,8 @@
 /* Close button for the popup */
 #closeButton {
     position: absolute;
-    top: 35px;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     background-color: #ff4d4d;
     color: white;
     border: none;
@@ -43,15 +43,16 @@
     cursor: pointer;
     border-radius: 4px;
     font-size: 14px;
-    z-index: 30;
 }
+
 
 /* Responsive styles */
 @media (min-width:768px) and (max-width: 1025px) {
     #pdfPreviewContainer {
         width: 90%;
-        height: 70%;
+        height: 80%;
     }
+
     #closeButton {
         font-size: 12px;
         padding: 6px 10px;
@@ -61,8 +62,9 @@
 @media (min-width: 320px) and (max-width: 480px) {
     #pdfPreviewContainer {
         width: 98%;
-        height: 75%;
+        height: 90%;
     }
+
     #closeButton {
         font-size: 10px;
         padding: 4px 8px;
@@ -79,3 +81,6 @@
         padding: 6px 10px;
     }
 }
+
+
+ 
