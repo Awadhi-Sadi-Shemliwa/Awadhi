@@ -153,29 +153,32 @@
             </ul>
 
 
-          <h2>My CV</h2>
-          <button onclick="showPDF()" class="read-more">Preview PDF</button>
-          
-          <!-- Overlay to close on outside click -->
-          <div id="pdfOverlay" onclick="hidePDF()"></div>
-      
-          <!-- PDF preview container with close button -->
-          <div id="pdfPreviewContainer">
-              <button id="closeButton" onclick="hidePDF()">Close</button>
-              <embed id="pdfPreview" src="./AWADHI SHEMLIWA.pdf" type="application/pdf">
-          </div>
-      
-          <script>
-              function showPDF() {
-                  document.getElementById("pdfOverlay").style.display = "block";
-                  document.getElementById("pdfPreviewContainer").style.display = "block";
-              }
-      
-              function hidePDF() {
-                  document.getElementById("pdfOverlay").style.display = "none";
-                  document.getElementById("pdfPreviewContainer").style.display = "none";
-              }
-          </script>          
+        <h2>My CV</h2>
+<button onclick="showPDF('./AWADHI SHEMLIWA.pdf')" class="read-more">Preview PDF</button>
+
+<!-- Overlay to close on outside click -->
+<div id="pdfOverlay" onclick="hidePDF()"></div>
+
+<!-- PDF preview container with close button -->
+<div id="pdfPreviewContainer">
+    <button id="closeButton" onclick="hidePDF()">Close</button>
+    <embed id="pdfPreview" type="application/pdf">
+</div>
+
+<script>
+    function showPDF(pdfUrl) {
+        // Dynamically set the PDF source
+        document.getElementById("pdfPreview").src = pdfUrl;
+        document.getElementById("pdfOverlay").style.display = "block";
+        document.getElementById("pdfPreviewContainer").style.display = "block";
+    }
+
+    function hidePDF() {
+        document.getElementById("pdfOverlay").style.display = "none";
+        document.getElementById("pdfPreviewContainer").style.display = "none";
+        document.getElementById("pdfPreview").src = ""; // Clear the source
+    }
+</script>
           </div>
 
         </div>
