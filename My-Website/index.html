@@ -155,14 +155,14 @@
 
           <h2>My CV</h2>
           <button onclick="showPDF()" class="read-more">Preview PDF</button>
-          <embed id="pdfPreview" src="./AWADHI SHEMLIWA.pdf" type="application/pdf">
+          
           <!-- Overlay to close on outside click -->
           <div id="pdfOverlay" onclick="hidePDF()"></div>
       
           <!-- PDF preview container with close button -->
           <div id="pdfPreviewContainer">
               <button id="closeButton" onclick="hidePDF()">Close</button>
-              
+              <embed id="pdfPreview" src="./AWADHI SHEMLIWA.pdf" type="application/pdf">
           </div>
       
           <script>
